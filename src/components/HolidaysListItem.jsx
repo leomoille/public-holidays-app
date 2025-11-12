@@ -1,5 +1,5 @@
-export default function HolidaysListItem() {
+export default function HolidaysListItem({value}) {
     return (
-        <li>25 décembre, Noël</li>
+        <li>{value.startDate}, {value.name[0].text}</li>
     )
 }
